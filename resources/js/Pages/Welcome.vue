@@ -354,25 +354,27 @@ const checkDate = (date) => {
     </div>
     <div v-else class="">
         <div
-            class="dark:bg-dots-lighter dark:bg-[#5C755E] w-full min-h-screen flex flex-col items-center justify-center">
+            class="dark:bg-dots-lighter dark:bg-[#5C755E] relative w-full min-h-screen flex flex-col items-center justify-center">
+            <video src="/videos/bg/Video.mp4" muted loop autoplay class="absolute top-0 left-0 w-full h-full object-cover"></video>
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 mix-blend-overlay"></div>
             <vue3-lottie :animation-data="BirthdayJSON" :width="600" :height="500"/>
-            <h3 class="text-white font-bold text-5xl mt-3">Happy Birthday SNEJANA</h3>
+            <h3 class="text-white font-bold text-7xl bg-pink-700 mt-3 absolute bottom-10">Happy Birthday SNEJANA</h3>
         </div>
-        <div class="mt-5 flex items-center justify-center">
-            <vue-gallery
-                :images="images"
-                :index="index"
-                :id="'gallery-123'"
-                @close="index = null"
-            />
-            <div
-                class="image cursor-pointer"
-                v-for="(image, imageIndex) in images"
-                :key="imageIndex"
-                @click="index = imageIndex"
-                :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
-            ></div>
-        </div>
+<!--        <div class="mt-5 flex items-center justify-center">-->
+<!--            <vue-gallery-->
+<!--                :images="images"-->
+<!--                :index="index"-->
+<!--                :id="'gallery-123'"-->
+<!--                @close="index = null"-->
+<!--            />-->
+<!--            <div-->
+<!--                class="image cursor-pointer"-->
+<!--                v-for="(image, imageIndex) in images"-->
+<!--                :key="imageIndex"-->
+<!--                @click="index = imageIndex"-->
+<!--                :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"-->
+<!--            ></div>-->
+<!--        </div>-->
 
         <div class="mt-10 flex flex-col items-center justify-center font-bold text-4xl md:text-2xl">
             <h2>Birthday Wishes.</h2>
