@@ -71,7 +71,7 @@ const time = (date) => {
     const newYear = new Date(date);
     ntime.value = newYear - now;
 }
-time('2023-09-16');
+time('2023-09-16 00:00');
 
 const t1 = ref(0);
 const t1Status = ref(false);
