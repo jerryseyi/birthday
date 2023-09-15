@@ -347,7 +347,7 @@ const checkDate = (date) => {
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-[#5C755E] dark:bg-dots-lighter dark:bg-[#5C755E] selection:bg-red-500 selection:text-white"
         v-if="counting"
     >
-        <vue-countdown :time="ntime" v-slot="{ days, hours, minutes, seconds }" @end="countdownEnd"
+        <vue-countdown :time="5000" v-slot="{ days, hours, minutes, seconds }" @end="countdownEnd"
                        class="text-white font-bold text-7xl">
             {{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
         </vue-countdown>
